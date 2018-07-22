@@ -421,7 +421,29 @@ nav.khung
 	// end box 5
 	// box6
 	.box6
-		width 100%
+		float left
+		position relative
+		width 90%
+		margin-left: 5%
+		margin-top: 2%
+		.image
+			display block
+			width 100%
+			height auto
+		.overlay 
+			position: absolute
+			top 9%
+			left 2%
+			right 0
+			background-color #a3a6a6
+			overflow hidden
+			width 96%
+			height 81%
+			-webkit-transform scale(0)
+			transition .3s ease
+			opacity: 0.5
+	.box6:hover .overlay
+		transform scale(1)
 	// end box 6
 	// box7
 	.box7
@@ -555,7 +577,9 @@ nav.khung
 		// end box 5
 		// box6
 		.box6
+			margin-left: 0
 			width 100%
+			margin 0
 		// end box 6
 		// box7
 		.box7
