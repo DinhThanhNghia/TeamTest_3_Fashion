@@ -976,7 +976,38 @@ nav.khung
 	// end box 9
 	// box10
 	.box10
+		float left
 		width 100%
+		height 150px
+		h3
+			font-weight 300
+		.underline
+			width 100%
+			height 1px
+			background-color text-color
+		.carousel
+			width 100%
+			height 65px
+			.carousel-inner
+				.carousel-item
+					ul 
+						list-style-type none
+						li 
+							float left
+							padding-left 30px
+			a.carousel-control-prev
+				background-color text-color
+				width 40px
+				height 40px
+				margin-left 90%
+				top -53px
+			a.carousel-control-next
+				background-color text-color
+				width 40px
+				right 40px
+				height 40px
+				top -53px
+		// end noi dung	
 	// end box 10
 	// box11
 	.box11
@@ -1195,7 +1226,23 @@ nav.khung
 		// end box 9
 		// box10
 		.box10
+			margin-left: 0
 			width 100%
+			.carousel 
+				width 768px
+				.carousel-inner
+					.carousel-item
+						ul
+							li 
+								a
+									img
+										width 100px
+				a.carousel-control-prev
+					margin-left 84%
+					top: -65px;
+				a.carousel-control-next
+					margin-left 84%
+					top: -65px
 		// end box 10
 		// box11
 		.box11
@@ -1204,7 +1251,6 @@ nav.khung
 		// box12
 		.box12
 			width 100%
-	// end box 12
 // end tablet
 // mobile
 @media screen and (max-width 360px)
@@ -1362,7 +1408,7 @@ nav.khung
 		// end box 9
 		// box10
 		.box10
-			width 100%
+			display none
 		// end box 10
 		// box11
 		.box11
