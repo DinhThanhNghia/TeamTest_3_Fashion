@@ -1,6 +1,7 @@
-text-color = #929aa8
 // khung
+text-color = #929aa8
 nav.khung
+	width 100%
 	// box1
 	.box1
 		float left
@@ -860,8 +861,7 @@ nav.khung
 		float left
 		width 89%
 		margin-left 5%
-		height 550px
-		background none
+		height 680px
 		.menu
 			float left
 			height 50px
@@ -977,7 +977,8 @@ nav.khung
 	// box10
 	.box10
 		float left
-		width 100%
+		width 90%
+		margin-left 5%
 		height 150px
 		h3
 			font-weight 300
@@ -1011,12 +1012,97 @@ nav.khung
 	// end box 10
 	// box11
 	.box11
+		float left
 		width 100%
-	// end box 11
+		height 450px
+		background #f1f1f1
+		.col-4
+			float left
+			border-right: 1px solid grey
+			a
+				img
+					margin-top 10%
+			p
+				margin-top 10%
+				margin-left 10%
+				color #c5bfbc
+			h5
+				margin-left 10%
+				color #c5bfbc
+			.anh
+				width 100%
+				height 100px
+				margin-left 10%
+				a.pay
+					float left
+					padding-right 1%
+					img
+						width 60px
+		.col-8
+			float left
+			.o1
+				width 100%
+				height 40%
+				margin-left 5%
+				h4
+					font-weight 300
+					padding-top 5%
+				form
+					.form-group
+						float left
+						width 60%
+						input
+							height 50px
+					.btn
+						float left
+						margin-left 0.5%
+						width 150px
+						height 50px
+						background black
+						&:hover
+							background red
+				hr
+					width 80%
+					float left
+			.o2
+				width 100%
+				height 60%
+				.col-md-4
+					float left
+					h4
+						padding-left 13%
+						color #c5bfbc
+						font-weight 300
+						padding-top 5%
+					ul
+						li
+							list-style-type none
+							padding-top 3%
+							a
+								text-decoration none
+								color text-color
+								&:hover
+									padding-left 5px
+									color red
+									transition .9s ease
+									i 
+										display block
+								i
+									font-size 8pt
+									padding-top 7.5px
+									display none
+									float left				
+	// end box11
 	// box12
 	.box12
+		float left
 		width 100%
-	// end box 12	
+		height 100px
+		background black
+		p
+			color white		
+			line-height 100px
+	// end box12
 // end khung
 // tablet
 @media screen and (max-width 768px)
@@ -1024,7 +1110,7 @@ nav.khung
 	nav.khung
 		// box1
 		.box1
-			margin-left: 0
+			margin-left: 0;
 			width 768px
 			.header 
 				// border none
@@ -1247,10 +1333,31 @@ nav.khung
 		// box11
 		.box11
 			width 100%
+			.col-4
+				h5
+					margin-left 0
+				p 
+					font-size: 10pt
+					margin-left 0
+				.anh
+					margin-left 0
+					a.pay
+						img
+							width 50px
+							height 35px
+				form
+			.col-8
+				h4.h4
+					font-size: 10pt
+				ul
+					li 
+						a
+							font-size: 10pt
 		// end box 11
 		// box12
 		.box12
 			width 100%
+	// end box 12
 // end tablet
 // mobile
 @media screen and (max-width 360px)
@@ -1412,9 +1519,38 @@ nav.khung
 		// end box 10
 		// box11
 		.box11
-			width 100%
-		// end box 11
-		// box12
+			height 780px
+			.col-4
+				a
+					img
+						margin-left 0
+						width 80px
+						height 80px
+				p 
+					font-size 8pt
+					margin 0
+				h5
+					margin-left 0 
+				.anh
+					height 410px
+					margin-left 0
+					width 100%
+					a.pay
+						float none
+						img
+							width 100%
+							margin-left 0
+							height 70px
+			.col-8
+				.o1
+					form
+						.btn
+							width 100px
+							height 40px
+		// end box11
+		// box12					
 		.box12
-			width 100%
+			p
+				font-size 10pt
+		// end box 12
 // end mobile
